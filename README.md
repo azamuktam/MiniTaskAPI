@@ -4,6 +4,7 @@
 A lightweight, RESTful Task Management API built with Pure PHP 8.1+.
 Designed with clean layered architecture (Controllers → Services → Repositories), following SOLID principles and PSR-4 standards.
 Fully Dockerized, tested with PHPUnit, and structured to demonstrate modern PHP best practices for maintainable, testable, and professional code.
+
 ## 🚀 Features
 - No frameworks: pure PHP.
 - Layered architecture: Controllers, Services, Repositories.
@@ -13,7 +14,7 @@ Fully Dockerized, tested with PHPUnit, and structured to demonstrate modern PHP 
 
 ## 📂 Project Structure
 
-```text
+```
 mini_task_api/
 ├─ app/
 │  ├─ Controllers/
@@ -50,11 +51,11 @@ mini_task_api/
    ```
 4. (Optional) Seed demo data:
 
-```bash
-make seed
-```
+   ```bash
+   make seed
+   ```
 
-5API available at `http://localhost:8080`
+5. API available at `http://localhost:8080`
 
 ## 📝 Example Requests
 
