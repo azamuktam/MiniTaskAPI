@@ -48,7 +48,13 @@ mini_task_api/
    ```bash
    make setup
    ```
-4. API available at `http://localhost:8080`
+4. (Optional) Seed demo data:
+
+```bash
+make seed
+```
+
+5API available at `http://localhost:8080`
 
 ## 📝 Example Requests
 

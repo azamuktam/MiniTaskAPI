@@ -59,3 +59,6 @@ clean: ## Remove containers, networks, and volumes (Resets DB)
 # Run all unit tests
 test:
 	docker-compose exec php ./vendor/bin/phpunit tests --colors=always
+
+seed:
+	docker-compose exec php php infrastructure/database/seed.php
