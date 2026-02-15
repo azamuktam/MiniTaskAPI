@@ -1,0 +1,12 @@
+# Composer dependencies
+/vendor/
+composer.lock
+.phpunit.result.cache
+
+# Environment variables
+.env
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
