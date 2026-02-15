@@ -1,7 +1,9 @@
+````markdown
 # Mini Task API (Pure PHP)
 
-A lightweight, RESTful API for managing tasks, built with **Pure PHP 8.1+**. Demonstrates **Layered Architecture** (Controller-Service-Repository) and follows **PSR-4** standards.
-
+A lightweight, RESTful Task Management API built with Pure PHP 8.1+.
+Designed with clean layered architecture (Controllers → Services → Repositories), following SOLID principles and PSR-4 standards.
+Fully Dockerized, tested with PHPUnit, and structured to demonstrate modern PHP best practices for maintainable, testable, and professional code.
 ## 🚀 Features
 - No frameworks: pure PHP.
 - Layered architecture: Controllers, Services, Repositories.
@@ -10,36 +12,54 @@ A lightweight, RESTful API for managing tasks, built with **Pure PHP 8.1+**. Dem
 - Modern PHP: strict typing, PHP 8.1+.
 
 ## 📂 Project Structure
+
+```text
 mini_task_api/
-├── app/            # Core application logic
-│   ├── Controllers/
-│   ├── Core/
-│   ├── Helpers/
-│   ├── Models/
-│   ├── Repositories/
-│   └── Services/
-├── public/         # Web root (entry point)
-├── routes/         # API route definitions
-├── test/           # Unit tests
-├── infrastructure/ # Docker & DB config
-├── vendor/         # Composer dependencies
-├── docker-compose.yml
-└── Makefile
+├─ app/
+│  ├─ Controllers/
+│  ├─ Core/
+│  ├─ Helpers/
+│  ├─ Models/
+│  ├─ Repositories/
+│  └─ Services/
+├─ public/
+├─ routes/
+├─ tests/
+├─ infrastructure/
+├─ vendor/
+├─ docker-compose.yml
+└─ Makefile
+````
 
 ## ⚡ Getting Started
-1. Clone repo
-2. Configure environment: `cp .env.example .env`
-3. Build and start Docker, install dependencies: `make setup`
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repo-url>
+   ```
+2. Configure environment:
+
+   ```bash
+   cp .env.example .env
+   ```
+3. Build and start Docker, install dependencies:
+
+   ```bash
+   make setup
+   ```
 4. API available at `http://localhost:8080`
 
 ## 📝 Example Requests
-- `GET /tasks` → list all tasks
-- `POST /tasks` → create task
-- `GET /tasks/{id}` → get task
-- `PUT /tasks/{id}` → update task
-- `DELETE /tasks/{id}` → delete task
+
+* `GET /tasks` → list all tasks
+* `POST /tasks` → create a task
+* `GET /tasks/{id}` → get a specific task
+* `PUT /tasks/{id}` → update a task
+* `DELETE /tasks/{id}` → delete a task
 
 ## 💾 Database
-- MySQL initialized from `infrastructure/database/init.sql`
-- Credentials configurable in `.env`
+
+* MySQL initialized from `infrastructure/database/init.sql`
+* Credentials configurable in `.env`
 
